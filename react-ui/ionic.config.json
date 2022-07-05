@@ -1,0 +1,7 @@
+{
+  "name": "react-ui",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

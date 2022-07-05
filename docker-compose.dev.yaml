@@ -1,0 +1,55 @@
+version: '3.8'
+services:
+  # Database
+  postgres:
+    container_name: eatnet-postgres-dev
+    build: ./postgres
+    environment:
+      POSTGRES_USER: YOUR_USER
+      POSTGRES_PASSWORD: YOUR_PASSWORD
+      POSTGRES_URL: postgres://YOUR_USER:YOUR_PASSWORD@localhost:5432/eatnet-dev
+      POSTGRES_DB: eatnet-dev
+      POSTGRES_HOST: postgres
+    ports:
+      - "5432:5432"
+    expose:
+      - 5432
+  
+  # pgAdmin
+  pgadmin:
+      image: dpage/pgadmin4
+      environment: 
+          - PGADMIN_DEFAULT_EMAIL=YOUR_PGADMIN_EMAIL@mail.com
+          - PGADMIN_DEFAULT_PASSWORD=YOUR_PGADMIN_PASSWORD
+      ports: 
+          - "5050:80"
+  
+  # Redis
+  redis:
+    container_name: eatnet-redis
+    image: redis
+    ports:
+      - "6379:6379"
+
+  # Backend
+  api:
+    container_name: eatnet-api-dev
+    build:
+      context: ./api/
+      dockerfile: Dockerfile.dev
+    command: npm start
+    working_dir: /usr/src/eatnet-api
+    volumes:
+      - ./api:/usr/src/eatnet-api
+      - ./api/uploads:/usr/src/eatnet-api/uploads
+    ports:
+      - "3000:3000"
+    expose: 
+      - 3000
+    environment:
+      POSTGRES_URI: postgres://YOUR_USER:YOUR_PASSWORD@localhost:5432/eatnet-dev
+      REDIS_URI: redis://eatnet-redis:6379
+      API_URL: http://localhost:3000
+      KNEX_CONFIG: development
+      API_PORT: 3000
+  
