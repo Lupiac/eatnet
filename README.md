@@ -31,6 +31,12 @@ docker ps -a
 
 ```
 
+Run react-ui in browser with:
+```
+ionic serve
+```
+
+
 Explore database at localhost:5050 using credentials set in pgadmin container definition
 
 ***Make sure you use postgreSQL instead of mySQL for this code base.***
