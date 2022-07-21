@@ -1,20 +1,19 @@
-const handleUserUpdate = (req, res, db) => {
-  const { userId } = req.params
-  const apikeyHash = bcrypt.hashSync(req.body.apiKey);
+const userService = require("../services/userService");
 
-  db('users')
-  .where({ user_id: userId })
-  .update({ plantnet_apikey: apikeyHash})
-  .then(resp => {
-    if (resp) {
-      res.status(200).json("Success")
-    } else {
-      res.status(400).json('Not found')
-    }
-  })
-  .catch(err => res.status(400).json('error updating user'))
+class UserController{
+  handleUserUpdate = (req, res) => {
+    const { userId } = req.params;
+    const { apiKey } = req.body;
+    return userService.updateUser({userId, apiKey})
+    .then(user => {
+      if (user) {
+        res.status(200).json(user)
+      } else {
+        res.status(400).json('Not found')
+      }
+    })
+    .catch(err => res.status(400).json('error updating user'));
+  }
 }
 
-module.exports = {
-  handleUserUpdate: handleUserUpdate
-}
+module.exports = new UserController();
