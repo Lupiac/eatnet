@@ -52,4 +52,5 @@ services:
       API_URL: http://localhost:3000
       KNEX_CONFIG: development
       API_PORT: 3000
-  
+      PLANTNET_API_URL: https://my-api.plantnet.org/v2/identify/all
+      PLANTNET_APIKEY: XXX-XXX-XXX  
