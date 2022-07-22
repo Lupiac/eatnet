@@ -8,8 +8,7 @@ class PlantnetService {
         form.append('organs', 'auto');
         form.append('images', fs.createReadStream(image.path));
     
-        const url = `${process.env.PLANTNET_API_URL}?api-key=${apikey}&lang=fr&include-related-images=true`
-    
+        const url = `${process.env.PLANTNET_API_URL}?api-key=${apikey.plantnet_apikey}&lang=fr&include-related-images=true`
         return axios
             .post(url,
                 form, {
