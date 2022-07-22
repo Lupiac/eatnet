@@ -1,0 +1,85 @@
+//// PATHS
+$folder__styles: '' !default;
+$folder__fonts: '../../assets/fonts/' !default;
+$folder__icons: '../../assets/images/icons/' !default;
+
+//// FONTS
+@font-face {
+    font-family: 'spacegrotesk__bold';
+    src: url($folder__fonts + "SpaceGrotesk-Bold.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'spacegrotesk__light';
+    src: url($folder__fonts + "SpaceGrotesk-Light.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'spacegrotesk__medium';
+    src: url($folder__fonts + "SpaceGrotesk-Medium.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'spacegrotesk__regular';
+    src: url($folder__fonts + "SpaceGrotesk-Regular.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+//// COLORS
+//Primary
+$primary-100: #f1eff9;
+$primary-200: #ccc0fb;
+$primary-300: #a891fc;
+$primary-400: #8462fe;
+$primary-500: #5f33ff;
+$primary-600: #542fda;
+$primary-700: #492cb5;
+$primary-800: #3d2890;
+$primary-900: #32246b;
+
+//Surface
+$surface-a: #ffffff;
+$surface-b: #f0f1f7;
+$surface-c: #d3d5e2;
+$surface-d: #b5b9cc;
+$surface-e: #989bb7;
+$surface-f: #7b7fa1;
+$surface-g: #61658c;
+$surface-h: #535678;
+$surface-i: #454664;
+$surface-j: #373752;
+$surface-k: #2a263e;
+
+// Buttons
+$error-200: #ffa9bb;
+$error-500: #F82D57;
+$error-600: #f71443;
+
+//// SPACING
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-7: 28px;
+$space-8: 32px;
+$space-9: 36px;
+$space-10: 40px;
+$space-11: 44px;
+$space-12: 48px;
+$space-13: 52px;
+$space-14: 56px;
+$space-15: 60px;
+$space-16: 64px;
+$space-17: 68px;
+$space-18: 72px;
+$space-19: 76px;
+$space-20: 80px;
+
+
+//// BREAKPOINTS
+$small-device: 360px
