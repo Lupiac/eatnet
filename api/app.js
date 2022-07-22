@@ -22,6 +22,7 @@ const corsOptions = {
 
 app.use(morgan('combined'));
 app.use(cors());
+app.use('/assets', express.static('assets'));
 // app.use(cors(corsOptions));
 app.use(express.json());
 app.use(signinRouter);
