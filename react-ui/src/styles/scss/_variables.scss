@@ -4,30 +4,7 @@ $folder__fonts: '../../assets/fonts/' !default;
 $folder__icons: '../../assets/images/icons/' !default;
 
 //// FONTS
-@font-face {
-    font-family: 'spacegrotesk__bold';
-    src: url($folder__fonts + "SpaceGrotesk-Bold.otf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'spacegrotesk__light';
-    src: url($folder__fonts + "SpaceGrotesk-Light.otf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'spacegrotesk__medium';
-    src: url($folder__fonts + "SpaceGrotesk-Medium.otf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'spacegrotesk__regular';
-    src: url($folder__fonts + "SpaceGrotesk-Regular.otf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 //// COLORS
 //Primary
 $primary-100: #f1eff9;
