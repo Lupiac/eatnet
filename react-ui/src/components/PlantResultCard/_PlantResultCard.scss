@@ -1,0 +1,110 @@
+.plant-result-card{
+    padding: $space-6;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #424242;
+    header {
+        ion-img{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            margin: auto;
+        }
+        .common-name{
+            margin-top: $space-3;
+            font-size: 16px;
+            font-family: "proxima__bold";
+        }
+        .scientific-name{
+            margin-top: $space-1;
+            font-size: 16px;
+            font-family: "proxima__italic";
+        }
+        margin-bottom: $space-6;
+    }
+    .edible-tags{
+        margin: 0 0 $space-6;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li{ 
+            flex: 0 0 auto;
+            width: 32px;
+            height: 32px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: relative;
+            &::before{
+                position: absolute;
+                top: -$space-2;
+                right: 0;
+                background-color: #fff;
+                height: 16px;
+                width: 16px;
+                box-shadow: 0 0 0 1px #fff;
+                border-radius: 50%; 
+            }
+            & + li{
+                margin-left: $space-3;
+            }
+            &.edible{
+                border-color: green;
+                &::before{
+                    content: url("../../assets/icons/notifs/valid.svg");
+                }
+            }
+            &.non-applicable{
+                border-color: orange;
+                &::before{
+                    content: url("../../assets/icons/notifs/warning.svg");
+                    box-shadow: none;
+                    background-color: transparent;
+                    z-index: 1;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    height: 0;
+                    width: 0;
+                    border-right: 11px solid transparent;
+                    border-bottom: 21px solid white;
+                    border-left: 11px solid transparent;
+                    top: -12px;
+                    right: -3px;
+                    border-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+            &.toxic{
+                border-color: red;
+                &::before{
+                    content: url("../../assets/icons/notifs/error.svg");
+                }
+            }
+        }
+    }
+    ion-accordion{
+        [slot="header"]{
+            &::part(native) {
+                padding-left: 0;
+                .item-inner{
+                    padding: 0;
+                }
+            }
+            ion-icon{
+                right: -16px;
+                position: relative;
+            }
+        }
+    }
+    .remarks-list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}

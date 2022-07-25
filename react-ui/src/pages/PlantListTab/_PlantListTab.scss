@@ -1,0 +1,22 @@
+ion-header{
+    padding: $space-6;
+    .sc-ion-searchbar-md-s{
+        padding: 0;
+        margin-bottom: $space-6;
+    }
+}
+.plantlist-wrapper{
+    margin: 0;
+    padding: $space-6;
+    list-style: none;
+    >li{
+        & + li{
+            margin-top: $space-6;
+        }
+    }
+}
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

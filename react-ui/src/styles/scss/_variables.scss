@@ -1,9 +1,33 @@
 //// PATHS
 $folder__styles: '' !default;
 $folder__fonts: '../../assets/fonts/' !default;
-$folder__icons: '../../assets/images/icons/' !default;
+$folder__icons: '../../assets/icons/' !default;
 
 //// FONTS
+@font-face {
+    font-family: 'proxima__bold';
+    src: url($folder__fonts + "Proxima-Nova-Bold.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima__light';
+    src: url($folder__fonts + "Proxima-Nova-Light.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima__italic';
+    src: url($folder__fonts + "Proxima-Nova-Italic.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima__regular';
+    src: url($folder__fonts + "Proxima-Nova-Regular.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 //// COLORS
 //Primary
