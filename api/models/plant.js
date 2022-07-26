@@ -3,7 +3,7 @@ class Plant {
         const {name, url, remarks, scientificName, type, toxicEquine, toxicBovin, toxicGoat, toxicSheep, toxicRabbit} = plantDto;
 
         this.name = name?name:"",
-        this.url = process.env.API_URL + url?url:"/assets/images/image_placeholder.png",
+        this.url = process.env.API_URL + url?url:"",
         this.remarks = remarks?remarks:[],
         this.scientificName = scientificName?scientificName:"",
         this.type = type?type:"",
