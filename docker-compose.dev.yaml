@@ -42,15 +42,20 @@ services:
     volumes:
       - ./api:/usr/src/eatnet-api
       - ./api/uploads:/usr/src/eatnet-api/uploads
-    ports:
-      - "3000:3000"
     expose: 
       - 3000
     environment:
       POSTGRES_URI: postgres://YOUR_USER:YOUR_PASSWORD@localhost:5432/eatnet-dev
       REDIS_URI: redis://eatnet-redis:6379
-      API_URL: http://localhost:3000
+      API_URL: SET_API_URL
       KNEX_CONFIG: development
       API_PORT: 3000
       PLANTNET_API_URL: https://my-api.plantnet.org/v2/identify/all
-      PLANTNET_APIKEY: XXX-XXX-XXX
+      PLANTNET_APIKEY: PLANTNET_APIKEY
+  # Nginx
+  nginx:
+    build: ./nginx
+    ports:
+    - '80:80'
+    depends_on:
+    - api
