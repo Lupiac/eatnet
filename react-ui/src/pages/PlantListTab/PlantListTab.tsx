@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonIcon, IonPage, IonSearchbar, IonTitle, IonToolbar, isPlatform } from '@ionic/react';
 import { hourglassOutline } from 'ionicons/icons';
 import { useEffect, useState } from 'react';
-import PlantResultCard from '../../components/PlantResultCard/PlantResultCard';
+import PlantResultCard from '../../components/organisms/PlantResultCard/PlantResultCard';
 import Plant from '../../models/plant';
 import { PlantService } from '../../services/plantService';
 
@@ -15,7 +15,7 @@ const PlantListTab: React.FC = () => {
   useEffect(()=>{
     plantService.getAllPlantsToxicity().then((resPlantList: Plant[]) => {
       console.log(resPlantList)
-      setPlantList(resPlantList);
+      setPlantList(resPlantList||[]);
     })
   }, [])
   useEffect(() => {

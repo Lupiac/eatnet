@@ -1,10 +1,10 @@
 import { IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import { cog, nutrition, search, time } from 'ionicons/icons';
 import { Redirect, Route } from 'react-router-dom';
-import HistoryTab from '../../pages/HistoryTab/HistoryTab';
-import PlantListTab from '../../pages/PlantListTab/PlantListTab';
-import SearchTab from '../../pages/SearchTab/SearchTab';
-import SettingsTab from '../../pages/SettingsTab/SettingsTab';
+import HistoryTab from '../../../pages/HistoryTab/HistoryTab';
+import PlantListTab from '../../../pages/PlantListTab/PlantListTab';
+import SearchTab from '../../../pages/SearchTab/SearchTab';
+import SettingsTab from '../../../pages/SettingsTab/SettingsTab';
 
 const TabBar: React.FC = () => {
   return (

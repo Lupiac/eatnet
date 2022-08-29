@@ -50,13 +50,13 @@
             &.edible{
                 border-color: green;
                 &::before{
-                    content: url("../../assets/icons/notifs/valid.svg");
+                    content: url("../../../assets/icons/notifs/valid.svg");
                 }
             }
             &.non-applicable{
                 border-color: orange;
                 &::before{
-                    content: url("../../assets/icons/notifs/warning.svg");
+                    content: url("../../../assets/icons/notifs/warning.svg");
                     box-shadow: none;
                     background-color: transparent;
                     z-index: 1;
@@ -80,7 +80,7 @@
             &.toxic{
                 border-color: red;
                 &::before{
-                    content: url("../../assets/icons/notifs/error.svg");
+                    content: url("../../../assets/icons/notifs/error.svg");
                 }
             }
         }

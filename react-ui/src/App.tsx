@@ -22,12 +22,12 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.scss';
 import './App.scss';
-import TabBar from './components/TabBar/TabBar';
+import TabBar from './components/organisms/TabBar/TabBar';
 
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonApp>
+  <IonApp className='eatnet'>
     <IonReactRouter>
       <TabBar/>
     </IonReactRouter>

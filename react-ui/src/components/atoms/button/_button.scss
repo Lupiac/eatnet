@@ -1,0 +1,92 @@
+.eatnet{
+    button, a.button-link{
+        display: block;
+        padding: $space-3 $space-4;
+        font-size: 16px;
+        line-height: 21px;
+        border-radius: 4px;
+        max-width: 380px;
+        width: 100%;
+        color: $surface-a;
+        border: none;
+        text-align: left;
+        font-family: 'proxima__bold';
+        cursor: pointer;
+        transition: background-color 300ms;
+        &:disabled{
+            cursor: not-allowed;
+        }
+        &.default{
+            background-color: $primary-500;
+            &:hover,&:focus-visible,&:active{
+                background-color: $primary-600;
+            }
+            &:disabled{
+                background-color: $primary-200;
+            }
+        }
+        &.secondary{
+            background-color: $surface-i;
+            &:hover,&:focus-visible,&:active{
+                background-color: $surface-j;
+            }
+            &:disabled{
+                background-color: $surface-c;
+            }
+        }
+        &.negative{
+            background-color: $error-500;
+            &:hover,&:focus-visible,&:active{
+                background-color: $error-600;
+            }
+            &:disabled{
+                background-color: $error-200;
+            }
+        }
+        &.suffix{
+            //icon size + spacing right
+            padding-right: calc(24px + $space-6);
+            position: relative;
+            &.arrow-right:after{
+                content: url('../'+$folder__icons + 'arrow-right-line.svg');
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                right: $space-3;
+            }
+            &:hover.arrow-right:after{
+                transform: scale(1.075);
+            }
+        }
+        &.circular{
+            width: 80px;
+            height: 80px;
+            padding: $space-4;
+            border-radius: 50%;
+        }
+        &.dashed{
+            border: 2px dashed $surface-g;
+            background-color: $surface-k;
+            &:hover{
+                border-color: $surface-e;
+                background-color: $surface-j;
+            }
+        }
+    }
+    button.is-link{
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        &.icon:hover{
+            transform: scale(1.125);
+        }
+    }
+    a.button-link{
+        &:hover,&:focus-visible{
+            text-decoration: none;
+        }
+    }
+}

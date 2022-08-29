@@ -21,16 +21,19 @@ export function PlantService() {
             // console.log("response: ",response)
             // return response;
         }    
-        return fetch(url, {
-            method: 'get',
-            headers: {'Content-Type': 'application/json'}
-            })
-            .then(response => response.json())
-            .then((res: any) => {
-                console.log(res)
-                return res.map((x:any) => {return new Plant(x)})
-            })
-            .catch(console.log)
+        else{
+            console.log("In service")
+            return fetch(url, {
+                method: 'get',
+                headers: {'Content-Type': 'application/json'}
+                })
+                .then(response => response.json())
+                .then(res => {
+                    console.log(res)
+                    return res.map((x:any) => {return new Plant(x)})
+                })
+                .catch(console.log)
+        }
     }
     return {
         getAllPlantsToxicity

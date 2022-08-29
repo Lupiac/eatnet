@@ -1,0 +1,45 @@
+.signin-card{
+    padding: $space-2;
+    form {
+        margin-top: $space-3;
+        border-radius: 4px;
+        .form-error-message{
+            display: none;
+            color: $error-500;
+        }
+        fieldset {
+            border: none;
+            padding: 0;
+            >:nth-child(n+2) {
+                margin-top: $space-4;
+            }
+        }
+        &.invalid{
+            .form-error-message{
+                display: block;
+                >:first-child{
+                    margin: $space-4 0 0 0;
+                }
+                >:nth-child(n+2) {
+                    margin: $space-2 0 0 0;
+                }
+            }
+        }
+    }
+
+
+    .input-prefix.ico-mail:before {
+        content: url('../../../assets/icons/mail.svg');
+    }
+
+    .input-prefix.ico-locked:before {
+        content: url('../../../assets/icons/locked-fill.svg');
+    }
+
+    .actions {
+        margin: $space-8 0 $space-4;
+        >:nth-child(n+2) {
+            margin-top: $space-4;
+        }
+    }
+}

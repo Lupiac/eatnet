@@ -1,6 +1,6 @@
 import { IonAccordion, IonAccordionGroup, IonIcon, IonImg, IonItem, IonLabel, IonText } from "@ionic/react";
 import { arrowDownCircle } from "ionicons/icons";
-import Plant from "../../models/plant";
+import Plant from "../../../models/plant";
 
 function PlantResultCard(props: any){
   const {plant}: {plant:Plant} = props;
