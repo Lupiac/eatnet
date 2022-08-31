@@ -7,7 +7,8 @@ interface FormInput{
   password: string;
 }
 
-function SigninCard() {
+function SigninCard(props: any) {
+    const {setShowSignin}: {setShowSignin:any} = props;
     const [passwordType, setPasswordType] = useState('password');
     const [isFormValid, setIsFormValid] = useState(true)
     const [requestError, setRequestError] = useState(false)
@@ -65,25 +66,26 @@ function SigninCard() {
         validateInput(e);
     }
 
-    const handlePasswordValidity = () => {
-        if (passwordType === 'password') {
-            setPasswordType('text')
-        } else {
-            setPasswordType('password')
-        }
+    const handlePasswordVisibility = (e:any) => {
+      if (e.target.checked) {
+        e.target.previousSibling.type ='text';
+      } else {
+        e.target.previousSibling.type ='password';
+      }
     }
     const onSignin = () => {
         return AccountService.signin(formInputs).then(res =>{
           if(res){
             setCurrentUser(res);
-            setRequestError(true);
-          }else{
             setRequestError(false);
+          }else{
+            setRequestError(true);
           }
-          
+          return res;
         })
     }
-    const onCreateAccount = () => {
+    const onRegisterLink = () => {
+      setShowSignin(false);
     }
     useEffect(()=>{
       let isError = false
@@ -104,6 +106,8 @@ function SigninCard() {
       }else{
         setRequestError(false)
         setIsFormValid(true);
+      }
+      return () => {
       }
       
     },[error])
@@ -139,7 +143,7 @@ function SigninCard() {
                     onChange={onInputChange}
                     onBlur={validateInput}
                   />
-                  <input type="checkbox" name="checkboxPassword" id="checkboxPassword" onClick={handlePasswordValidity}/>
+                  <input type="checkbox" name="checkboxPassword" id="checkboxPassword" onClick={handlePasswordVisibility}/>
                   <label htmlFor="checkboxPassword"></label>
                 </div>
                 <div className="field-validation-error">{error.password}</div>
@@ -168,7 +172,7 @@ function SigninCard() {
                 Se connecter
               </button>
               <button
-                onClick={onCreateAccount}
+                onClick={onRegisterLink}
                 type="button"
                 className="button-link secondary">
                 Je n'ai pas encore de compte

@@ -1,4 +1,4 @@
-.signin-card{
+.register-form{
     padding: $space-2;
     form {
         margin-top: $space-3;
@@ -34,6 +34,9 @@
 
     .input-prefix.ico-locked:before {
         content: url('../../../assets/icons/locked-fill.svg');
+    }
+    .input-prefix.ico-key:before {
+        content: url('../../../assets/icons/key-line.svg');
     }
 
     .actions {
