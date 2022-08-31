@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CurrentUserContext } from "../../../contexts/CurrentUserContext";
 import AccountService from "../../../services/accountService";
 
 interface FormInput{
@@ -18,6 +19,8 @@ function SigninCard() {
       mail: '',
       password: ''
     } as FormInput)
+
+    const {setCurrentUser} = useContext(CurrentUserContext);
 
     const regex = {
       emailRegex: /\S+@\S+\.\S+/
@@ -71,7 +74,13 @@ function SigninCard() {
     }
     const onSignin = () => {
         return AccountService.signin(formInputs).then(res =>{
-          setRequestError(res?false:true);
+          if(res){
+            setCurrentUser(res);
+            setRequestError(true);
+          }else{
+            setRequestError(false);
+          }
+          
         })
     }
     const onCreateAccount = () => {

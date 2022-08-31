@@ -23,15 +23,21 @@ import '@ionic/react/css/display.css';
 import './theme/variables.scss';
 import './App.scss';
 import TabBar from './components/organisms/TabBar/TabBar';
+import { CurrentUserContextProvider } from './contexts/CurrentUserContext';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp className='eatnet'>
-    <IonReactRouter>
-      <TabBar/>
-    </IonReactRouter>
-  </IonApp>
-);
+const App: React.FC = () => {
+
+  return (
+    <CurrentUserContextProvider>
+      <IonApp className='eatnet'>
+          <IonReactRouter>
+            <TabBar/>
+          </IonReactRouter>
+      </IonApp>
+    </CurrentUserContextProvider>
+  )
+};
 
 export default App;
