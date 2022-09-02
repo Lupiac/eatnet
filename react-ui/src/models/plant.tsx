@@ -27,8 +27,9 @@ export default class Plant {
         return this
     }
     public containsString(s: string): boolean{
+        const searchedText = s.toLocaleLowerCase();
         const name = this.name.normalize('NFD').replace(/\p{Diacritic}/gu, "").toLocaleLowerCase();
         const scientificName = this.scientificName.normalize('NFD').replace(/\p{Diacritic}/gu, "").toLocaleLowerCase();
-        return name.includes(s) || scientificName.includes(s)
+        return name.includes(searchedText) || scientificName.includes(searchedText)
     }
 }

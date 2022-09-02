@@ -3,16 +3,20 @@ ion-header{
     .sc-ion-searchbar-md-s{
         padding: 0;
         margin-bottom: $space-6;
+        button{
+            width: auto;
+        }
     }
 }
 .plantlist-wrapper{
     margin: 0;
     padding: $space-6;
     list-style: none;
-    >li{
-        & + li{
-            margin-top: $space-6;
-        }
+    >:first-child{
+        position: relative !important;
+    }
+    .plant-result-card{
+        margin-bottom: $space-6;
     }
 }
 .search-wrapper{

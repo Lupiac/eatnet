@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import PlantResultCard from '../../components/organisms/PlantResultCard/PlantResultCard';
 import Plant from '../../models/plant';
 import { PlantService } from '../../services/plantService';
+import { Virtuoso } from 'react-virtuoso'
 
 const PlantListTab: React.FC = () => {
   const plantService = PlantService();
@@ -12,33 +13,22 @@ const PlantListTab: React.FC = () => {
   const [filteredPlantList, setFilteredPlantList] = useState<Plant[]>([]);
   const platform = isPlatform('hybrid')?"hybrid":"desktop"
 
+  // Get all plant toxicities at page load
   useEffect(()=>{
     plantService.getAllPlantsToxicity().then((resPlantList: Plant[]) => {
       console.log(resPlantList)
       setPlantList(resPlantList||[]);
+      setFilteredPlantList(resPlantList)
     })
   }, [])
-  useEffect(() => {
-    setFilteredPlantList(plantList)
-  }, [plantList])
+  
+  // Filters plantList 
   useEffect(() => {
     const filteredList = plantList.filter((x: Plant) => {
       return x.containsString(searchText)
     })
     setFilteredPlantList(filteredList)
   }, [searchText])
-  const request = () => {
-    plantService.getAllPlantsToxicity().then((resPlantList: any) => {
-      console.log(resPlantList)
-      setPlantList(resPlantList);
-    })
-  }
-  const plantContainsString = () => {
-    plantService.getAllPlantsToxicity().then((resPlantList: any) => {
-      console.log(resPlantList)
-      setPlantList(resPlantList);
-    })
-  }
   
   return (
     <IonPage>
@@ -53,16 +43,11 @@ const PlantListTab: React.FC = () => {
             </div>
           </IonToolbar>
         </IonHeader>
-        <ul className='plantlist-wrapper'>
-          {filteredPlantList.map((x:Plant, index:any) => (
-            <li key={index}>
-              <PlantResultCard plant={x}/>
-            </li>
-          ))}
-        </ul>
-        <button className="fab-button connect" onClick={() => request()}>
-              <IonIcon icon={hourglassOutline}></IonIcon>
-          </button>
+        <Virtuoso
+          className='plantlist-wrapper'
+          totalCount={filteredPlantList.length}
+          itemContent={(index) => filteredPlantList.length>0?<PlantResultCard plant={filteredPlantList[index]}/>:"rien"}
+        />
       </IonContent>
     </IonPage>
   );
