@@ -71,7 +71,9 @@ const PlantListTab: React.FC = () => {
           ref={virtuoso}
           groupCounts={groupData.groupCounts}
           groupContent={index => {
-            return <div>{groupData.groups[index]['group']}</div>
+            return <div style={{
+              color: 'transparent'
+            }}>{groupData.groups[index]['group']}</div>
           }}
           itemContent={index =>
             filteredPlantList[index]?<PlantResultCard plant={filteredPlantList[index]}/>:''
