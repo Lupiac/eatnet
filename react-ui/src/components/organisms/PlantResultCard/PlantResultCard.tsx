@@ -16,12 +16,20 @@ function PlantResultCard(props: any){
         </header>
         <ul className="edible-tags">
           <li className={`ico-rabbit ${getToxicityClass(plant.toxicRabbit)}`}>
-            {/* <IonIcon src="assets/images/icon/rabbit.svg"/> */}
+            <IonIcon src="assets/icon/rabbit.svg"/>
           </li>
-          <li className={`ico-horse ${getToxicityClass(plant.toxicEquine)}`}></li>
-          <li className={`ico-bovin ${getToxicityClass(plant.toxicBovin)}`}></li>
-          <li className={`ico-goat ${getToxicityClass(plant.toxicGoat)}`}></li>
-          <li className={`ico-sheep ${getToxicityClass(plant.toxicSheep)}`}></li>
+          <li className={`ico-horse ${getToxicityClass(plant.toxicEquine)}`}>
+            <IonIcon src="assets/icon/horse.svg"/>
+          </li>
+          <li className={`ico-bovin ${getToxicityClass(plant.toxicBovin)}`}>
+            <IonIcon src="assets/icon/cow.svg"/>
+          </li>
+          <li className={`ico-goat ${getToxicityClass(plant.toxicGoat)}`}>
+            <IonIcon src="assets/icon/goat.svg"/>
+          </li>
+          <li className={`ico-sheep ${getToxicityClass(plant.toxicSheep)}`}>
+            <IonIcon src="assets/icon/sheep.svg"/>
+          </li>
         </ul>
         <IonAccordionGroup>
           <IonAccordion value="remarques" toggleIcon={arrowDownCircle}>
