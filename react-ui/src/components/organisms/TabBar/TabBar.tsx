@@ -1,6 +1,7 @@
 import { IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import { cog, nutrition, search, time } from 'ionicons/icons';
 import { Redirect, Route } from 'react-router-dom';
+import { PlantListContextProvider } from '../../../contexts/PlantListContext';
 import HistoryTab from '../../../pages/HistoryTab/HistoryTab';
 import PlantListTab from '../../../pages/PlantListTab/PlantListTab';
 import SearchTab from '../../../pages/SearchTab/SearchTab';
@@ -11,7 +12,9 @@ const TabBar: React.FC = () => {
     <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/plantListTab">
-            <PlantListTab/>
+            <PlantListContextProvider>
+              <PlantListTab/>
+            </PlantListContextProvider>
           </Route>
           <Route exact path="/searchTab">
             <SearchTab/>
