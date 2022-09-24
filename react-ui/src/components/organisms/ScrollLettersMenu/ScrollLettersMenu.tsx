@@ -1,14 +1,9 @@
 import { useContext, useEffect, useRef, useState } from "react";
-import { GroupedVirtuosoHandle } from "react-virtuoso";
 import { PlantListContext } from "../../../contexts/PlantListContext";
 
-interface Props{
-    virtuoso: React.RefObject<GroupedVirtuosoHandle>
-}
 
-const ScrollLettersMenu= (props: Props) => {
-    const { virtuoso } = props;
-    const { groupData } = useContext(PlantListContext);
+const ScrollLettersMenu= () => {
+    const { groupData, virtuoso } = useContext(PlantListContext);
     const [currentScrollIndex, setCurrentScrollIndex] = useState('')
     const [isDragging, setIsDragging] = useState(false)
     const [wrapperCoordinates, setWrapperCoordinates] = useState<DOMRect|null>()
@@ -39,6 +34,7 @@ const ScrollLettersMenu= (props: Props) => {
         return indexToScroll;
     }
 
+    // Checks if user is touching the scroll letter menu
     const isTouchInMenuWrapper = (coordX: number, coordY: number) =>{
         return wrapperCoordinates?
         ( wrapperCoordinates.x < coordX 
@@ -48,12 +44,15 @@ const ScrollLettersMenu= (props: Props) => {
         && coordY > (wrapperCoordinates.top))
         :false
     }
+
+    // Scrolls to selected items when user is touching a letter
     const onPointerDown = (e: React.PointerEvent<any>, index: number, itemIndex: number) => {
         e.preventDefault();
         setIsDragging(true)
         manageScrollMenu(groupData.groups[index]['group'], itemIndex)
-
     }
+    
+    // Scrolls to selected items when user has touched a letter and is sliding to another one
     const onPointerMove = (e: React.PointerEvent<any>, index: number, itemIndex: number) => {
         e.preventDefault();
         if(isDragging){
@@ -62,11 +61,15 @@ const ScrollLettersMenu= (props: Props) => {
             }
         }
     }
+
+    // Removes letter preview when user removes his finger from the srll letter menu
     const onPointerUp = (e: React.PointerEvent<any>) => {
         e.preventDefault();
         setCurrentScrollIndex('')
         setIsDragging(false)
     }
+    
+    // Scrolls to selected items when user has touched a letter and is sliding to another one (on mobile)
     const onTouchMove = (e: React.TouchEvent < any > , index: number, itemIndex: number) => {
             e.preventDefault();
             if (isDragging && isTouchInMenuWrapper(e.nativeEvent.touches[0].pageX, e.nativeEvent.touches[0].pageY)) {
@@ -81,6 +84,7 @@ const ScrollLettersMenu= (props: Props) => {
                 setIsDragging(false);
             }
     }
+
     useEffect(()=>{
         setTimeout(()=>{
             const _scrollLettersRef = document.querySelector(".scroll-letters-wrapper");
@@ -90,6 +94,7 @@ const ScrollLettersMenu= (props: Props) => {
             }
         },200)
     },[])
+    
     return (
         <>
             <ul

@@ -1,5 +1,7 @@
-.register-form{
+.eatnet .register-form{
     padding: $space-2;
+    max-height: 100%;
+    overflow: auto;
     form {
         margin-top: $space-3;
         border-radius: 4px;

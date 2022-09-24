@@ -14,7 +14,7 @@ const SettingsTab: React.FC = () => {
     if(currentUser){
       return <>
         <p>Vous êtes connecté(e)</p>
-        <button onClick={logOut}>Se déconnecter</button>
+        <button onClick={logOut} className='btn default'>Se déconnecter</button>
       </>
     }else{
       return <>

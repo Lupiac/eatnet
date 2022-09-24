@@ -1,0 +1,87 @@
+.eatnet {
+    .filter-btn{
+        width: auto;
+        padding: $space-2 ;
+        display: flex;
+        align-items: center;
+        &::after{
+            content: url('../../../assets/icons/filter.svg');
+            display: block;
+            height: 16px;
+            width: 16px;
+            margin-left: $space-2;
+        }
+    }
+    .filter-animal-wrapper{
+        ion-header{
+            padding: 0 $space-4 $space-2;
+        }
+        .content {
+            padding: $space-3;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        table{
+            width: 100%;
+            font-size: 14px;
+        }
+        thead{
+            .ico {
+                display: flex;
+                flex-direction: column;
+                &::before{
+                    margin-bottom: 4px;
+                }
+            }
+            .ico-edible{
+                &::before{
+                    content: url('../../../assets/icons/notifs/valid.svg');
+                }
+            }
+            .ico-toxic{
+                &::before{
+                    content: url('../../../assets/icons/notifs/error.svg');
+                }
+            }
+            .ico-warning{
+                &::before{
+                    content: url('../../../assets/icons/notifs/warning.svg');
+                }
+            }
+            th{
+                padding: 0 $space-1;
+            }
+        }
+        tbody {
+            td{
+                padding: $space-2 $space-1;
+                text-align: center;
+                position: relative;
+                div{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            th{
+                padding: $space-2 $space-1;
+                text-align: left;
+            }
+        }
+        .actions{
+            display: flex;
+            align-items: flex-end;
+            flex-grow: 1;
+            margin-top: $space-3;
+            button + button{
+                margin-left: $space-3;
+            }
+        }
+        input[type="checkbox"].no-label + label{
+            line-height: 1;
+            height: 18px;
+        }
+    }
+}

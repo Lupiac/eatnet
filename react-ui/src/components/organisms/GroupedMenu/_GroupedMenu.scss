@@ -1,0 +1,19 @@
+.eatnet .grouped-menu{
+    height: 100%;
+    position: relative;
+    .plantlist-wrapper{
+        >:first-child{
+            padding: $space-6;
+        }
+        .plant-result-card{
+            margin-bottom: $space-6;
+        }
+        [data-test-id="virtuoso-top-item-list"] {
+            display: none;
+        }
+        .group-header{
+            position: relative;
+            font-size: 1px;
+        }
+    }
+}

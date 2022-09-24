@@ -1,14 +1,12 @@
+import PlantToxicities from "./plantToxicities";
+
 export default class Plant {
     public name: string;
     public url: string;
     public remarks: string[];
     public scientificName: string;
     public type: string;
-    public toxicEquine: number;
-    public toxicBovin: number;
-    public toxicGoat: number;
-    public toxicSheep: number;
-    public toxicRabbit: number;
+    public toxicities : PlantToxicities;
 
     constructor(plantDto: any) {
         const {name, url, remarks, scientificName, type, toxicEquine, toxicBovin, toxicGoat, toxicSheep, toxicRabbit} = plantDto;
@@ -18,11 +16,14 @@ export default class Plant {
         this.remarks = remarks?remarks:[];
         this.scientificName = scientificName?scientificName:"";
         this.type = type?type:"";
-        this.toxicEquine = toxicEquine?toxicEquine:0;
-        this.toxicBovin = toxicBovin?toxicBovin:0;
-        this.toxicGoat = toxicGoat?toxicGoat:0;
-        this.toxicSheep = toxicSheep?toxicSheep:0;
-        this.toxicRabbit = toxicRabbit?toxicRabbit:0
+        const _toxicities = {
+            rabbit: toxicRabbit?toxicRabbit:0,
+            equine: toxicEquine?toxicEquine:0,
+            bovin: toxicBovin?toxicBovin:0,
+            goat: toxicGoat?toxicGoat:0,
+            sheep: toxicSheep?toxicSheep:0
+        }
+        this.toxicities = new PlantToxicities(_toxicities)
 
         return this
     }

@@ -1,17 +1,24 @@
-import { createContext, useMemo, useState } from 'react'
+import { createContext, useMemo, useRef, useState } from 'react'
+import { GroupedVirtuosoHandle } from 'react-virtuoso';
 import Plant from '../models/plant';
 
 type PlantListContextType = {
     setGroupData: Function;
     groupData: {groups:[], groupCounts:[]};
-    setFilteredPlantList: Function;
     filteredPlantList: Plant[];
+    setFilteredPlantList: Function;
+    originalPlantList: Plant[];
+    setOriginalPlantList: Function;
+    virtuoso: any
 };
 const defaultContext: PlantListContextType = {
     setGroupData: () => {},
     groupData: {groups:[], groupCounts:[]},
+    filteredPlantList: [],
     setFilteredPlantList: () => {},
-    filteredPlantList: []
+    originalPlantList: [],
+    setOriginalPlantList: () => {},
+    virtuoso: null
 }
 export const PlantListContext = createContext(defaultContext);
 
@@ -21,9 +28,11 @@ export const PlantListContextProvider = ({ children }:any) => {
         groupCounts: [] = []
     });
     const [filteredPlantList, setFilteredPlantList] = useState<Plant[]>([]);
+    const [originalPlantList, setOriginalPlantList] = useState<Plant[]>([]);
+    let virtuoso = useRef();
     const value = useMemo(
-        () => ({ groupData, setGroupData, filteredPlantList, setFilteredPlantList }), 
-        [groupData, filteredPlantList]
+        () => ({ groupData, setGroupData, filteredPlantList, setFilteredPlantList, originalPlantList, setOriginalPlantList, virtuoso }), 
+        [groupData, filteredPlantList, originalPlantList, virtuoso]
     );
 
     return <PlantListContext.Provider value={value}>{children}</PlantListContext.Provider>

@@ -1,43 +1,9 @@
-ion-header{
-    padding: $space-4;
-    h1{
-        margin-top: 0;
-    }
-    .sc-ion-searchbar-md-s{
-        padding: 0;
-        margin-bottom: $space-4;
-        box-shadow: none;
-        button{
-            width: auto;
+.eatnet{
+    ion-content{
+        --overflow: hidden;
+        &::part(scroll){
+            display: flex;
+            flex-direction: column;
         }
     }
-}
-.searchbar-input.sc-ion-searchbar-md{
-    box-shadow: none;
-    border: 1px solid $surface-e;
-}
-.plantlist-wrapper{
-    height: calc(100% - 152px) !important;
-    >:first-child{
-        padding: $space-6;
-    }
-    .plant-result-card{
-        margin-bottom: $space-6;
-    }
-    [data-test-id="virtuoso-top-item-list"] {
-        display: none;
-    }
-    .group-header{
-        position: relative;
-        font-size: 1px;
-    }
-}
-
-.search-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-ion-content{
-    --overflow: hidden;
 }

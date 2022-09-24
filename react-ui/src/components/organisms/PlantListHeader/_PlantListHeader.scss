@@ -1,0 +1,50 @@
+.eatnet .plantlist-header {
+    padding: $space-4 $space-4 $space-2;
+    h1{
+        margin: 0;
+    }
+    .sc-ion-searchbar-md-s{
+        padding: 0;
+        margin-bottom: $space-4;
+        box-shadow: none;
+        button{
+            width: auto;
+        }
+    }
+    ion-toolbar {
+        >:first-child{
+            margin-bottom: $space-2;
+            justify-content: space-between;
+        }
+    }
+    .search-btn.secondary.ghost{
+        border: none;
+        position: relative;
+        height: 28px;
+        width: 28px;
+        display: block;
+        &::before{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &.ico-search::before{
+            content: url('../../../assets/icons/search.svg');
+        }
+        &.ico-close::before{
+            content: url('../../../assets/icons/cross-fill.svg');
+        }
+    }
+    
+    .searchbar-input.sc-ion-searchbar-md{
+        box-shadow: none;
+        border: 1px solid $surface-e;
+    }
+    
+    .search-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

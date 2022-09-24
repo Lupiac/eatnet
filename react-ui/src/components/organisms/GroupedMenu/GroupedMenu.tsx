@@ -31,12 +31,10 @@ const groupDataByFirstLetter = (array: Plant[]): any => {
 }
 
 const GroupedMenu = () => {
-    const {groupData, setGroupData, filteredPlantList} = useContext(PlantListContext);
-    const virtuoso = useRef<GroupedVirtuosoHandle>(null)
+    const {groupData, setGroupData, filteredPlantList, virtuoso} = useContext(PlantListContext);
 
     // Updates groups when filteredPlantList changes
     useEffect(() => {
-        console.log(groupDataByFirstLetter(filteredPlantList))
         setGroupData(groupDataByFirstLetter(filteredPlantList))
     }, [filteredPlantList])
 
@@ -48,7 +46,7 @@ const GroupedMenu = () => {
         })
     }, [groupData])
 
-    return <>
+    return <div className="grouped-menu">
         <GroupedVirtuoso
             className='plantlist-wrapper'
             ref={virtuoso}
@@ -58,12 +56,12 @@ const GroupedMenu = () => {
                 opacity: '0'
               }}>{groupData.groups[index]['group']}</div>
             }}
-            itemContent={index =>
-              filteredPlantList[index]?<PlantResultCard plant={filteredPlantList[index]}/>:''
+            itemContent={index =>{
+              return filteredPlantList[index]?<PlantResultCard plant={filteredPlantList[index]}/>:""}
             }
         />
-        <ScrollLettersMenu virtuoso={virtuoso}/>
-    </>
+        <ScrollLettersMenu/>
+    </div>
 }
 
 export default GroupedMenu;

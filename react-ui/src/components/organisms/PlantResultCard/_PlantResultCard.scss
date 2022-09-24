@@ -1,4 +1,4 @@
-.plant-result-card{
+.eatnet .plant-result-card{
     padding: $space-6;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     color: #424242;
@@ -39,10 +39,10 @@
                 position: absolute;
                 top: -$space-3;
                 right: -6px;
-                background-color: #fff;
+                background-color: $surface-a;
                 height: 16px;
                 width: 16px;
-                box-shadow: 0 0 0 1px #fff;
+                box-shadow: 0 0 0 1px $surface-a;
                 border-radius: 50%; 
             }
             &:nth-last-child(n+2){

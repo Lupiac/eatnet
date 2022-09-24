@@ -217,12 +217,12 @@ function RegisterCard(props: any) {
         <button
           onClick={onSubmitRegister}
           type="button"
-          className="default suffix arrow-right"
+          className="btn default suffix arrow-right"
           disabled={!isFormValid}
         >
           S'inscrire
         </button>
-        <button onClick={onSigninLink} className="button-link secondary">
+        <button onClick={onSigninLink} className="btn button-link secondary">
           J'ai déjà un compte
         </button>
       </div>

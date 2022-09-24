@@ -1,6 +1,7 @@
 import { IonAccordion, IonAccordionGroup, IonIcon, IonImg, IonItem, IonLabel, IonText } from "@ionic/react";
 import { arrowDownCircle } from "ionicons/icons";
 import Plant from "../../../models/plant";
+import PlantToxicities from "../../../models/plantToxicities";
 
 function PlantResultCard(props: any){
   const {plant}: {plant:Plant} = props;
@@ -15,21 +16,13 @@ function PlantResultCard(props: any){
             <div className="scientific-name">{plant.scientificName}</div>
         </header>
         <ul className="edible-tags">
-          <li className={`ico-rabbit ${getToxicityClass(plant.toxicRabbit)}`}>
-            <IonIcon src="assets/icon/rabbit.svg"/>
-          </li>
-          <li className={`ico-horse ${getToxicityClass(plant.toxicEquine)}`}>
-            <IonIcon src="assets/icon/horse.svg"/>
-          </li>
-          <li className={`ico-bovin ${getToxicityClass(plant.toxicBovin)}`}>
-            <IonIcon src="assets/icon/cow.svg"/>
-          </li>
-          <li className={`ico-goat ${getToxicityClass(plant.toxicGoat)}`}>
-            <IonIcon src="assets/icon/goat.svg"/>
-          </li>
-          <li className={`ico-sheep ${getToxicityClass(plant.toxicSheep)}`}>
-            <IonIcon src="assets/icon/sheep.svg"/>
-          </li>
+          {Object.keys(plant.toxicities).map( (toxicity: string) =>{
+            return (
+              <li key={toxicity} className={`ico-${toxicity} ${getToxicityClass(plant.toxicities[toxicity as keyof PlantToxicities])}`}>
+                <IonIcon src={`assets/icon/${toxicity}.svg`}/>
+              </li>
+            )
+          })}
         </ul>
         <IonAccordionGroup>
           <IonAccordion value="remarques" toggleIcon={arrowDownCircle}>

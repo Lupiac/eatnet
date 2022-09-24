@@ -166,7 +166,7 @@ function SigninCard(props: any) {
               <button
                 onClick={onSignin}
                 type="button"
-                className="default suffix arrow-right"
+                className="btn default suffix arrow-right"
                 disabled={!isFormValid}
               >
                 Se connecter
@@ -174,7 +174,7 @@ function SigninCard(props: any) {
               <button
                 onClick={onRegisterLink}
                 type="button"
-                className="button-link secondary">
+                className="btn button-link secondary">
                 Je n'ai pas encore de compte
               </button>
             </div>

@@ -48,4 +48,11 @@
             }
         }
     }
+    input[type="checkbox"].no-label{
+        + label {
+            display: inline;
+            padding-left: 0;
+            left: -$checkbox-size/2;
+        }
+    }
 }
