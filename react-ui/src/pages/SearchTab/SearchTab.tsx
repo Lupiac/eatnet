@@ -1,17 +1,19 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonPage } from '@ionic/react';
+import { useContext } from 'react';
 import NewSearch from '../../components/organisms/NewSearch/NewSearch';
+import ResultsSearch from '../../components/organisms/ResultsSearch/ResultsSearch';
+import { SearchContext } from '../../contexts/SearchContext';
 
 const SearchTab: React.FC = () => {
+  const {plantResults} = useContext(SearchContext);
+
+  const manageSearch =()=>{
+    return plantResults.length>0?<ResultsSearch/>:<NewSearch/>
+  }
   return (
     <IonPage className='search-tab'>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Recherche</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <NewSearch></NewSearch>
-      </IonContent>
+        {manageSearch()}
+      
     </IonPage>
   );
 };

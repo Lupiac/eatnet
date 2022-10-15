@@ -1,0 +1,135 @@
+.eatnet .plant-analysis-result-card{
+    padding: $space-6;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #424242;
+    header {
+        ion-img{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            margin: auto;
+            background-color: #e9eef1;
+        }
+        .scientific-name{
+            margin-top: $space-3;
+            font-size: 20px;
+            font-family: "proxima__bold";
+        }
+        margin-bottom: $space-6;
+        .score{
+            font-size: 14px;
+            font-family: "proxima__bold";
+            margin-top: $space-2;
+        }
+    }
+    .common-names{
+        margin: $space-1 0 $space-8;
+        padding: 0 0 0 $space-6;
+        list-style-type: disc;
+    }
+    .edible-tags{
+        margin: $space-3 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        li{ 
+            flex: 0 0 38px;
+            height: 38px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: relative;
+            &::before{
+                position: absolute;
+                top: -$space-3;
+                right: -6px;
+                background-color: $surface-a;
+                height: 16px;
+                width: 16px;
+                box-shadow: 0 0 0 1px $surface-a;
+                border-radius: 50%; 
+            }
+            &:nth-last-child(n+2){
+                margin-right: $space-3;
+                margin-bottom: $space-3;
+            }
+            &.edible{
+                border-color: $c-success;
+                ion-icon{
+                    fill: $c-success;
+                }
+                &::before{
+                    content: url("../../../assets/icons/notifs/valid.svg");
+                }
+            }
+            &.non-applicable{
+                border-color: $c-warning;
+                ion-icon{
+                    fill: $c-warning;
+                }
+                &::before{
+                    content: url("../../../assets/icons/notifs/warning.svg");
+                    box-shadow: none;
+                    background-color: transparent;
+                    z-index: 1;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    height: 0;
+                    width: 0;
+                    border-right: 11px solid transparent;
+                    border-bottom: 21px solid white;
+                    border-left: 11px solid transparent;
+                    top: -16px;
+                    right: -9px;
+                    border-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+            &.toxic{
+                border-color: $c-error;
+                ion-icon{
+                    fill: $c-error;
+                }
+                &::before{
+                    content: url("../../../assets/icons/notifs/error.svg");
+                }
+            }
+            ion-icon{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        .ico-rabbit ion-icon{
+            left: -1px;
+        }
+    }
+    ion-accordion{
+        [slot="header"]{
+            &::part(native) {
+                padding-left: 0;
+                .item-inner{
+                    padding: 0;
+                }
+            }
+            ion-icon{
+                right: -16px;
+                position: relative;
+            }
+        }
+    }
+    .remarks-list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}
