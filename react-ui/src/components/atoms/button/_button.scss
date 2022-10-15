@@ -101,4 +101,23 @@
             text-decoration: none;
         }
     }
+    .fab-button{
+        background-color: #6AC583;
+        // box-shadow: 0 0 0 10px #F1F5F7;
+        position: fixed;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+        ion-icon{
+            width: 26px;
+            height: 26px;
+            color: $surface-a;
+        }
+      }
 }

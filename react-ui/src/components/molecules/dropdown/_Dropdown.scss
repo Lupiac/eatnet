@@ -1,0 +1,146 @@
+.eatnet{
+    .dropdown-wrapper{
+        width: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        .dropdown__label{
+            display: block;
+            margin-bottom: $space-3;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .dropdown__value{
+            box-sizing: border-box;
+            width: 100%;
+            border: solid 1px $surface-g;
+            // background-color: $surface-j;
+            border-radius: 4px;
+            // color: $surface-a;
+            padding: $space-3 $space-4;
+            font-size: 16px;
+            font-family: "proxima__regular";
+            line-height: 22px;
+            transition: background-color 300ms, border 300ms;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            div{
+                flex: 1 1 auto;
+            }
+            svg{
+                flex-basis: 24px;
+                transition: 0.3s;
+            }
+            &::placeholder {
+                color: $surface-e;
+            }
+            &:focus-visible,
+            &:hover {
+                outline: none;
+                border: solid 1px $surface-a;
+            }
+        }
+        .listbox__container{
+            position: relative;
+        }
+        .listbox{
+            position: absolute;
+            top: 100%;
+            // background-color: $surface-j;
+            width: 100%;
+            padding: 0;
+            z-index: 1;
+            max-height: 0px;
+            overflow: auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            transition: max-height 0.3s;
+            li{
+                padding: $space-1 $space-4;
+                font-size: 16px;
+                font-family: "proxima__regular";
+                line-height: 22px;
+                &:hover,&:focus-visible, &:active, &:focus{
+                    background-color: $surface-d;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+            dl{
+                dd{
+                    margin-left: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+        .field-validation-error {
+            display: none;
+            text-transform: uppercase;
+            font-size: 10px;
+            color: $error-200;
+            margin-top: $space-2;
+        }
+        &.is-error {
+            .dropdown__value {
+                border: 1px solid $error-500;
+            }
+            .field-validation-error {
+              display: block;
+            }
+        }
+        &.is-open{
+            .listbox{
+                max-height: 104px*1.2;
+                border: 1px solid $surface-g;
+            }
+            svg{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .is-error .dropdown-wrapper {
+        .dropdown__value {
+            border: 1px solid $error-500;
+        }
+        .field-validation-error {
+          display: block;
+        }
+    }
+    .listbox__modal{
+        padding: $space-6;
+        ion-header{
+            padding: $space-5 $space-4;
+            h1{
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+        .listbox{
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            overflow-y: auto;
+            li{
+                padding: $space-2 $space-4;
+                font-size: 16px;
+                font-family: "proxima__regular";
+                line-height: 22px;
+                border-top: 1px solid $surface-b;
+                &:hover,&:focus-visible, &:active, &:focus{
+                    background-color: $surface-d;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+            dl{
+                dd{
+                    margin-left: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

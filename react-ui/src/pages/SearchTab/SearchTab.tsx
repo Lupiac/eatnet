@@ -1,21 +1,16 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../../components/organisms/ExploreContainer';
+import NewSearch from '../../components/organisms/NewSearch/NewSearch';
 
 const SearchTab: React.FC = () => {
   return (
-    <IonPage>
+    <IonPage className='search-tab'>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+          <IonTitle>Recherche</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+        <NewSearch></NewSearch>
       </IonContent>
     </IonPage>
   );

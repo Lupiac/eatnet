@@ -20,7 +20,7 @@ const PlantListTab: React.FC = () => {
   }, [])
 
   return (
-    <IonPage>
+    <IonPage className='plantlist-tab'>
       <IonContent fullscreen>
         <PlantListHeader></PlantListHeader>
         <GroupedMenu></GroupedMenu>

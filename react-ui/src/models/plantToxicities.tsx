@@ -7,7 +7,7 @@ export default class PlantToxicities {
 
     constructor(plantToxicitiesDto: any) {
         const {rabbit, equine, bovin, goat, sheep} = plantToxicitiesDto;
-        this.rabbit = rabbit
+        this.rabbit = rabbit;
         this.equine = equine;
         this.bovin = bovin;
         this.goat = goat;
