@@ -10,12 +10,12 @@ class PlantController{
     }
 
     handleImageAnalysis = (req, res) => {
-        const {userId} = req.body;
+        const {userId, preferedReferential, organs} = req.body;
         const file = req.file;
         if (!userId || !file) {
             return res.status(400).json('incorrect form submission');
         }
-        return plantService.analyseImage(userId, file).then(results =>{
+        return plantService.analyseImage(userId, file, preferedReferential, organs).then(results =>{
             return res.status(200).json({results: results})
         })
         .catch(err => {

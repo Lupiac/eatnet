@@ -3,12 +3,13 @@ const FormData = require('form-data');
 const fs = require('fs');
 
 class PlantnetService {
-    searchPlantnet = async (image, apikey) => {
+    searchPlantnet = async (image, apikey, preferedReferential, organs) => {
         const form = new FormData();
-        form.append('organs', 'auto');
+        form.append('organs', organs);
         form.append('images', fs.createReadStream(image.path));
-    
-        const url = `${process.env.PLANTNET_API_URL}?api-key=${apikey.plantnet_apikey}&lang=fr&include-related-images=true`
+        
+        const url = `${process.env.PLANTNET_API_URL}/${preferedReferential}?api-key=${apikey.plantnet_apikey}&lang=fr&include-related-images=true`
+        console.log(url);
         return axios
             .post(url,
                 form, {

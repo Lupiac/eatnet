@@ -50,7 +50,7 @@ services:
       API_URL: SET_API_URL
       KNEX_CONFIG: development
       API_PORT: 3000
-      PLANTNET_API_URL: https://my-api.plantnet.org/v2/identify/all
+      PLANTNET_API_URL: https://my-api.plantnet.org/v2/identify
       PLANTNET_APIKEY: PLANTNET_APIKEY
   # Nginx
   nginx:

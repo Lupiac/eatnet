@@ -6,9 +6,9 @@ class PlantService {
     getAllPlantsToxicity = () =>{
         return toxicityService.getAllPlantsToxicity();
     }
-    analyseImage = async (userId, file) => {
+    analyseImage = async (userId, file, preferedReferential, organs) => {
         const apiKey = await userDAO.getUserApiKey(userId);
-        const plantNetResponse = await plantnetService.searchPlantnet(file, apiKey);
+        const plantNetResponse = await plantnetService.searchPlantnet(file, apiKey, preferedReferential, organs);
         return toxicityService.getPlantsToxicity(plantNetResponse.results);
     }
 }
