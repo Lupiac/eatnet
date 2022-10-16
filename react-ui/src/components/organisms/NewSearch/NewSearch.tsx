@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonIcon, IonTitle, IonToolbar} from "@ionic/react";
+import { IonContent, IonHeader, IonIcon, IonTitle, IonToolbar, useIonModal} from "@ionic/react";
 import { camera } from "ionicons/icons";
 import { useContext, useEffect, useState } from "react";
 import { SearchContext } from "../../../contexts/SearchContext";
@@ -9,11 +9,13 @@ import { UserPhoto } from "../../../models/userPhoto";
 import { PlantnetService } from "../../../services/plantnetService";
 import { PlantService } from "../../../services/plantService";
 import Dropdown from "../../molecules/dropdown/Dropdown";
+import OrganModal from "../OrganModal/OrganModal";
 
 function NewSearch(props: any) {
   const plantService = PlantService();
   const {setPlantResults} = useContext(SearchContext);
 
+  const [photo, setPhoto] = useState<null|UserPhoto>(null)
   const [referentials, setReferential] = useState<Referential[]>([])
   const [preferedReferential, setPreferedReferential] = useState('the-plant-list')
   const plantnetService = PlantnetService();
@@ -21,13 +23,30 @@ function NewSearch(props: any) {
 
   const manuallyTakePhoto = async() => {
     takePhoto().then((photo:UserPhoto)=>{
-      plantService.requestAnalysis(photo).then((data: PlantnetAnalysisResult[]) => {
-        setPlantResults(data);
-      })
+      setPhoto(photo)
+      present();
     }).catch((error:any)=>{
       console.log(error.message)
     });
   }
+
+  const [present, dismiss] = useIonModal(OrganModal, {
+    onDismiss: async (data: string, role: string) => { 
+      console.log(data, role);
+      if (role === 'confirm') {
+        if(photo){
+          plantService.requestAnalysis(photo, preferedReferential, data).then((data: PlantnetAnalysisResult[]) => {
+            setPlantResults(data);
+          })
+        }
+        return Promise.resolve(dismiss(data, role));
+      }
+      else{
+        return Promise.resolve(dismiss(false, role));
+      }
+    },
+    photo: photo
+  });
 
   useEffect(()=>{
     plantnetService.getAllReferentials().then((referentials: Referential[])=>setReferential(referentials));
@@ -51,7 +70,6 @@ function NewSearch(props: any) {
         <button className="fab-button take-photo" onClick={() => manuallyTakePhoto()}>
             <IonIcon icon={camera}></IonIcon>
         </button>
-        
       </div>
     </IonContent>
   </>

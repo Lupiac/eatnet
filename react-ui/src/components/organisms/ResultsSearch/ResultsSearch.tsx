@@ -23,7 +23,7 @@ const ResultsSearch= () => {
             <div className="results-search-wrapper">
                 <ul className="results-wrapper">
                     {plantResults.map((plantResult:PlantnetAnalysisResult)=>{
-                        return <PlantAnalysisResultCard plant={plantResult}/>
+                        return <PlantAnalysisResultCard plant={plantResult} key={plantResult.name||plantResult.scientificName}/>
                     })}
                 </ul>
             </div>

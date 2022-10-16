@@ -40,11 +40,12 @@ export function PlantService() {
                 .catch(console.log)
         }
     }
-    const requestAnalysis = async (image: UserPhoto): Promise <any[]>=> {
+    const requestAnalysis = async (image: UserPhoto, preferedReferential: string, organ: string): Promise <any[]>=> {
       const file = await Utils.dataURLtoFile(image.data);
       const form = new FormData();
       form.append('userId', currentUser.user.user_id);
-      form.append('organs', 'auto');
+      form.append('organs', organ);
+      form.append('referential', preferedReferential);
       form.append('images', file, 'tmp');
 
       // 3. Add GET URL parameters

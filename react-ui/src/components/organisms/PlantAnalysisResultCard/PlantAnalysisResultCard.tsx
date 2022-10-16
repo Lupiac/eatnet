@@ -1,6 +1,5 @@
 import { IonAccordion, IonAccordionGroup, IonIcon, IonImg, IonItem, IonLabel, IonText } from "@ionic/react";
 import { arrowDownCircle } from "ionicons/icons";
-import Plant from "../../../models/plant";
 import PlantToxicities from "../../../models/plantToxicities";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCreative} from 'swiper';
@@ -47,8 +46,8 @@ function PlantAnalysisResultCard(props: any){
           }}
         >
           {plant.images.map((image: any)=>(
-            <SwiperSlide key={image.url.m}>
-                <IonImg src={image.url.m} />
+            <SwiperSlide key={image.url.s}>
+                <IonImg src={image.url.s} />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -18,7 +18,7 @@ export function usePhotoGallery() {
       const { value } = await Storage.get({key: PHOTO_STORAGE });
       const photosInStorage = (value ? JSON.parse(value) : []) as UserPhoto[];
       // If running on the web...
-      if (!isPlatform('hybrid')) {
+      if (!isPlatform('hybrid') && photosInStorage.length>0) {
         for (let photo of photosInStorage) {
           const file = await Filesystem.readFile({
             path: photo.filepath,

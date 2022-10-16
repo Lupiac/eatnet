@@ -205,7 +205,18 @@ export function PlantnetService() {
         return Promise.resolve(referentials);
 
     }
+    const getAllOrgans= async() => {
+      const organs = [
+        {text: "Feuille", value: "leaf"},
+        {text: "Fleur", value: "flower"},
+        {text: "Fruit", value: "fruit"},
+        {text: "Écorce", value: "bark"},
+        {text: "Auto", value: "auto"},
+      ];
+      return Promise.resolve(organs);
+    }
     return {
-        getAllReferentials
+        getAllReferentials,
+        getAllOrgans
     }
 }
