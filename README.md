@@ -11,21 +11,21 @@ Ionic with React and Capacitor
 
 ## How to run this project ?
 
-- Create a Plantnet developper account here (https://my.plantnet.org/signup) in order to have a plantnet api key
+- Create a Plantnet developer account here (https://my.plantnet.org/signup) in order to have a (free) developer plantnet api key
 - Set environment variables ('SET_XXXX') with your values in docker-compose.yaml
 - Run ***`dependencies_installer.sh`*** script to install dependencies in *`api`* folder and *`react-ui`* folder
 - Run ***`docker-compose -f {DOCKER_FILE_TO_RUN} up --build`*** from project root folder
 ```
-docker-compose -f docker-compose.dev.yaml up --build
+docker-compose -f docker-compose.dev.yaml up --build -d
 ```
 
 For debugging purposes, you can access directly a Docker container by running the above command:
 ```
 // start a single container (where: {SERVICE_NAME} = api, postgres, react-ui, redis)
-docker-compose -f docker-compose.dev.yml up --build {SERVICE_NAME}
+docker-compose -f docker-compose.dev.yaml up --build {SERVICE_NAME}
 
 // access directly a Docker container {SERVICE_NAME} = api, postgres, react-ui, redis)
-docker exec -it stage-up-{SERVICE_NAME} /bin/bash
+docker exec -it eatnet-{SERVICE_NAME} /bin/bash
 
 // check the status of all running containers:
 docker ps -a
@@ -80,7 +80,7 @@ Explore database at localhost:5050 using credentials set in pgadmin container de
 ![Register screen](./documentation/images/9_search.png)
 #### Choosing referential to optimize analysis
 ![Register screen](./documentation/images/10_search_referential.png)
-#### Choosing image to analyse, either from the galler or from camera
+#### Choosing image to analyse, either from the gallery or from camera
 ![Register screen](./documentation/images/11_search_button.png)
 #### Defining which organ the image is reflecting to optimize analysis
 ![Register screen](./documentation/images/12_search_organ.png)
