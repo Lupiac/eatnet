@@ -50,6 +50,7 @@ describe("POST /plants", () => {
       const response = await request(app).post(`/plants`)
       .field('userId', currentUser.user.user_id)
       .field('organs', 'auto')
+      .field('referential', 'the-plant-list')
       .attach('images', __dirname  +'/assets/images/benoite_commune.jpg')
       .set("Content-Type", "multipart/form-data")
       .set("Authorization", currentUser.token);
@@ -61,6 +62,7 @@ describe("POST /plants", () => {
       const response = await request(app).post(`/plants`)
       .field('userId', currentUser.user.user_id)
       .field('organs', 'auto')
+      .field('referential', 'the-plant-list')
       .set("Content-Type", "multipart/form-data")
       .set("Authorization", currentUser.token);
 
@@ -72,6 +74,7 @@ describe("POST /plants", () => {
       const response = await request(app).post(`/plants`)
       .field('userId', currentUser.user.user_id)
       .field('organs', 'auto')
+      .field('referential', 'the-plant-list')
       .attach('images', __dirname  +'/assets/images/benoite_commune.jpg')
       .set("Content-Type", "multipart/form-data");
 
