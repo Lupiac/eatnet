@@ -5,9 +5,9 @@ services:
     container_name: eatnet-postgres-prod
     build: ./postgres
     environment:
-      POSTGRES_USER: YOUR_USER
-      POSTGRES_PASSWORD: YOUR_PASSWORD
-      POSTGRES_URL: postgres://YOUR_USER:YOUR_PASSWORD@localhost:5432/eatnet-prod
+      POSTGRES_USER: SET_YOUR_USER
+      POSTGRES_PASSWORD: SET_YOUR_PASSWORD
+      POSTGRES_URL: postgres://SET_YOUR_USER:SET_YOUR_PASSWORD@localhost:5432/eatnet-prod
       POSTGRES_DB: eatnet-prod
       POSTGRES_HOST: postgres
     ports:
@@ -19,8 +19,8 @@ services:
   pgadmin:
       image: dpage/pgadmin4
       environment: 
-          - PGADMIN_DEFAULT_EMAIL=YOUR_PGADMIN_EMAIL@mail.com
-          - PGADMIN_DEFAULT_PASSWORD=YOUR_PGADMIN_PASSWORD
+          - PGADMIN_DEFAULT_EMAIL=SET_YOUR_PGADMIN_EMAIL@mail.com
+          - PGADMIN_DEFAULT_PASSWORD=SET_YOUR_PGADMIN_PASSWORD
       ports: 
           - "5050:80"
   
@@ -45,13 +45,13 @@ services:
     expose: 
       - 3000
     environment:
-      POSTGRES_URI: postgres://YOUR_USER:YOUR_PASSWORD@localhost:5432/eatnet-prod
+      POSTGRES_URI: postgres://SET_YOUR_USER:SET_YOUR_PASSWORD@postgres:5432/eatnet-prod
       REDIS_URI: redis://eatnet-redis:6379
       API_URL: SET_API_URL
       KNEX_CONFIG: development
       API_PORT: 3000
       PLANTNET_API_URL: https://my-api.plantnet.org/v2/identify
-      PLANTNET_APIKEY: PLANTNET_APIKEY
+      PLANTNET_APIKEY: SET_PLANTNET_APIKEY
   nginx:
     build: ./nginx
     ports:
