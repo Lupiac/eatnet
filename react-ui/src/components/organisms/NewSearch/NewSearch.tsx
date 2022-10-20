@@ -32,7 +32,6 @@ function NewSearch(props: any) {
 
   const [present, dismiss] = useIonModal(OrganModal, {
     onDismiss: async (data: string, role: string) => { 
-      console.log(data, role);
       if (role === 'confirm') {
         if(photo){
           plantService.requestAnalysis(photo, preferedReferential, data).then((data: PlantnetAnalysisResult[]) => {

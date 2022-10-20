@@ -3,7 +3,6 @@ import { isPlatform } from "@ionic/react";
 const Utils = {
 // helper function: generate a new file from base64 String
   dataURLtoFile: (dataurl:any ) => {
-    console.log("dataurl: ",dataurl);
     const arr = dataurl.split(',')
     const matched = arr[0].match(/:(.*?);/)
     const mime = matched?matched[1]:'';

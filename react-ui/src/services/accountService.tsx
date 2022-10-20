@@ -7,7 +7,6 @@ const AccountService = {
         const url = process.env.REACT_APP_API_URL +'/signin'
         console.log("url: ", url)
         if (isPlatform('hybrid')) {
-            console.log('hybridddd')
             const options = {
               url: url,
             };
@@ -36,7 +35,6 @@ const AccountService = {
         const url = process.env.REACT_APP_API_URL +'/register'
         console.log("url: ", url)
         if (isPlatform('hybrid')) {
-            console.log('hybridddd')
             const options = {
               url: url,
             };

@@ -11,9 +11,7 @@ export function PlantService() {
 
     const getAllPlantsToxicity = async() => {
         const url = process.env.REACT_APP_API_URL +'/plants'
-        console.log("url: ", url)
         if (isPlatform('hybrid')) {
-            console.log('hybridddd')
             const options = {
               url: url,
             };
