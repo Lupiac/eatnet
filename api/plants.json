@@ -1,9 +1,249 @@
 [
   {
-    "name": "Abricot",
+    "name": "Aubergine",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Toutes les parties sont toxiques sauf le fruit"],
+    "scientificName": "Solanum melongena",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Arisème petit-prêcheur",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Toutes les parties sont toxiques"],
+    "scientificName": "Arisaema triphyllum",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Aroïde",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
+    "scientificName": "Syngonium podophyllum",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Algues bleues",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Certaines formes toxiques"],
+    "scientificName": "Cnidoscolus texanus",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Aigre-doux",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Fruits toxiques"],
+    "scientificName": "Celastrus, dulcamara",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Amarante",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["oxalates"],
+    "scientificName": "Amaranthus spp.",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Agératine",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Ageratina altissima",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Agave américain",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Agave americana",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Agave lecheguilla",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Agave lecheguilla",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Amaryllis belladonna",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Bulbe toxique"],
+    "scientificName": "Brunsvigia rosea",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Amaryllis",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Bulbe toxique"],
+    "scientificName": "Hippeastrum",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Amianthium",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Amianthium muscaetoxicum",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Amanite",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["toutes les parties"],
+    "scientificName": "Amanita",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Agaric moucheté",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Amanita muscaria",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Aesculus",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Notamment germes, noix"],
+    "scientificName": "Aesculus",
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Carambole",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
+    "type": "Fruits",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": -1
+  },
+  {
+    "name": "Canneberge",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
+    "scientificName": "",
+    "type": "Fruits",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": -1
+  },
+  {
+    "name": "Clémentine",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Feuilles toxiques","Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
+    "scientificName": "",
+    "type": "Fruits",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": -1
+  },
+  {
+    "name": "Mandarine",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Feuilles toxiques","Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
+    "scientificName": "",
+    "type": "Fruits",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": -1
+  },
+  {
+    "name": "Airelle",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
+    "scientificName": "",
+    "type": "Fruits",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": -1
+  },
+  {
+    "name": "Abricot",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct du noyau/pépin","Les noyaux d’abricots contiennent du cyanure"],
+    "scientificName": "Prunus armeniaca",
     "type": "Fruits",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -23,14 +263,25 @@
     "remarks": []
   },
   {
-    "name": "Acacia",
+    "name": "Acacia berlandieri",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
     "toxicBovin": 0,
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Acacia berlandieri",
+    "remarks": []
+  },
+  {
+    "name": "Acacia dealbata",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Acacia dealbata",
     "remarks": []
   },
   {
@@ -66,14 +317,14 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
-    "remarks": []
+    "scientificName": "Acokanthera",
+    "remarks": ["fruits, fleurs très toxiques"]
   },
   {
     "name": "Aconit anthore",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "scientificName": "Aconitum anthora",
-    "remarks": [],
+    "remarks": ["Toutes les parties sont très toxiques"],
     "toxicEquine": 1,
     "toxicBovin": 0,
     "toxicGoat": 0,
@@ -85,6 +336,7 @@
     "url": "./assets/images/illustrations/image_placeholder.png",
     "scientificName": "Aconitum napellus",
     "remarks": [
+      "Toutes les parties sont très toxiques",
       "surtout la racine : aconine, aconitine, napelline, néoline, néopelline."
     ],
     "toxicEquine": 1,
@@ -105,14 +357,47 @@
     "remarks": []
   },
   {
-    "name": "Actée",
+    "name": "Actaea rubra",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
     "toxicBovin": 0,
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Actaea rubra",
+    "remarks": ["fruits, racines, feuillage"]
+  },
+  {
+    "name": "Actaea alba",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Actaea alba",
+    "remarks": ["fruits, racines, feuillage"]
+  },
+  {
+    "name": "Actaea spicata",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Actaea spicata",
+    "remarks": ["fruits, racines, feuillage"]
+  },
+  {
+    "name": "Actée à grappes bleues",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Caulophyllum thalictroides",
     "remarks": []
   },
   {
@@ -168,6 +453,17 @@
     "toxicSheep": 0,
     "toxicRabbit": 1,
     "scientificName": "",
+    "remarks": []
+  },
+  {
+    "name": "Nerine bowdenii",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Nerine bowdenii",
     "remarks": []
   },
   {
@@ -266,6 +562,28 @@
     "remarks": []
   },
   {
+    "name": "Aloe panaché",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Aloe variegata",
+    "remarks": []
+  },
+  {
+    "name": "Aloès perfoliata",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Aloe nobilis",
+    "remarks": []
+  },
+  {
     "name": "Aloe Vera",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
@@ -273,7 +591,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Aloe vera",
     "remarks": []
   },
   {
@@ -323,8 +641,8 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
-    "remarks": []
+    "scientificName": "Aquilegia",
+    "remarks": ["Toutes les parties sont toxiques"]
   },
   {
     "name": "Anemone",
@@ -338,6 +656,39 @@
     "remarks": []
   },
   {
+    "name": "Apocyne chanvrin",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Apocynum cannabinum",
+    "remarks": []
+  },
+  {
+    "name": "Apocynum",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Apocynum sp.",
+    "remarks": []
+  },
+  {
+    "name": "Anthurium",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Anthurium",
+    "remarks": []
+  },
+  {
     "name": "Anémone des bois",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
@@ -345,7 +696,18 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Anemone coronaria",
+    "remarks": []
+  },
+  {
+    "name": "Anemone",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Anemone sp.",
     "remarks": []
   },
   {
@@ -398,6 +760,17 @@
     "toxicRabbit": 0
   },
   {
+    "name": "Aristoloche siphon",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Aristolochia durior",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
     "name": "Aristoloche clématite",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "scientificName": "Aristolochia clematitis",
@@ -439,6 +812,28 @@
     "toxicSheep": 0,
     "toxicRabbit": 1,
     "scientificName": "",
+    "remarks": []
+  },
+  {
+    "name": "Arum blanc",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Zantedeschia aethiopiea",
+    "remarks": []
+  },
+  {
+    "name": "Arum des marais / Calla des marais",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Calla palustris",
     "remarks": []
   },
   {
@@ -504,6 +899,17 @@
     "remarks": []
   },
   {
+    "name": "Asperge de Sprenger",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Asparagus aethiopicus",
+    "remarks": []
+  },
+  {
     "name": "Aspérule odorante",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
@@ -529,6 +935,19 @@
     "toxicRabbit": 0
   },
   {
+    "name": "Astragale",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Astragalus sp.",
+    "remarks": [
+      "anorexie, léthargie, tremblements, troubles nerveux."
+    ],
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 1,
+    "toxicSheep": 1,
+    "toxicRabbit": 1
+  },
+  {
     "name": "Aubépine à un style",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [
@@ -541,6 +960,30 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": -1
+  },
+  {
+    "name": "Asclépiade",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Asclepias sp.",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Asclépiade tubéreuse",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Asclepias tuberosa",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
   },
   {
     "name": "Aubépine monogyne",
@@ -586,7 +1029,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Persea americana",
     "remarks": []
   },
   {
@@ -633,8 +1076,8 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
-    "remarks": []
+    "scientificName": "Rhododendron occidental",
+    "remarks": ["Toutes les parties sont mortelles"]
   },
   {
     "name": "Bacchante",
@@ -644,19 +1087,8 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
-    "remarks": []
-  },
-  {
-    "name": "Baccharis",
-    "url": "./assets/images/illustrations/image_placeholder.png",
-    "toxicEquine": 0,
-    "toxicBovin": 0,
-    "toxicGoat": 0,
-    "toxicSheep": 0,
-    "toxicRabbit": 1,
-    "scientificName": "",
-    "remarks": []
+    "scientificName": "Baccharis",
+    "remarks": ["Baccharis sp."]
   },
   {
     "name": "Balsamine des jardins",
@@ -666,8 +1098,19 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Impatiens balsamina",
     "remarks": []
+  },
+  {
+    "name": "Baumier",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dacryodes macrophylla",
+    "remarks": ["Graines et écorce extérieure du fruit toxiques"]
   },
   {
     "name": "Bambou",
@@ -681,6 +1124,17 @@
     "remarks": [
       "sans danger si votre lapin grignote quelques feuilles au passage mais à ne pas cueillir. Les turions sont toxiques"
     ]
+  },
+  {
+    "name": "Bambou sacré",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Nandina domestica",
+    "remarks": []
   },
   {
     "name": "Banane",
@@ -741,7 +1195,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Begonia",
     "remarks": []
   },
   {
@@ -753,7 +1207,7 @@
     "toxicSheep": 1,
     "toxicRabbit": 1,
     "scientificName": "Atropa belladonna",
-    "remarks": []
+    "remarks": ["toutes les parties sont toxiques, en particulier les baies noires"]
   },
   {
     "name": "Benoite commune",
@@ -792,6 +1246,17 @@
     "toxicGoat": 1,
     "toxicSheep": 1,
     "toxicRabbit": -1
+  },
+  {
+    "name": "Belle-de-nuit",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Mirabilis jalapa",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
   },
   {
     "name": "Berce du Caucase",
@@ -1066,6 +1531,17 @@
     "remarks": []
   },
   {
+    "name": "Buisson ardent",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Pyracantha sp.",
+    "remarks": []
+  },
+  {
     "name": "Buis",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
@@ -1073,7 +1549,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Buxus sp.",
     "remarks": []
   },
   {
@@ -1095,7 +1571,29 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Cactaceae",
+    "remarks": []
+  },
+  {
+    "name": "Cactus candélabre",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Pilosocereus royenii",
+    "remarks": []
+  },
+  {
+    "name": "Caoutchouc",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Ficus spp.",
     "remarks": []
   },
   {
@@ -1343,7 +1841,7 @@
   {
     "name": "Cerise",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines","les queues et le feuillage sauvages et cultivés sont mortels, l’écorce, les noyaux"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -1353,7 +1851,18 @@
     "toxicRabbit": -1
   },
   {
-    "name": "Ceriser",
+    "name": "Cerisier noir",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les feuilles fanées sont toxiques"],
+    "scientificName": "Prunus serotina",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Cerisier",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -1417,6 +1926,17 @@
     "remarks": []
   },
   {
+    "name": "Chou puant",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Symplocarpus foetidus",
+    "remarks": []
+  },
+  {
     "name": "Chêne",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
@@ -1426,7 +1946,8 @@
     "toxicRabbit": 1,
     "scientificName": "",
     "remarks": [
-      "sans danger si votre lapin en grignote au passage mais à ne pas cueillir"
+      "sans danger si votre lapin en grignote au passage mais à ne pas cueillir",
+      "les feuillages, glands sont toxiques"
     ]
   },
   {
@@ -1607,14 +2128,38 @@
     "toxicRabbit": -1
   },
   {
-    "name": "Chrysantèmes",
+    "name": "Brassicacées",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Brassicaceae",
+    "remarks": [],
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Brugmansie",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Brugmansia",
+    "remarks": [],
+    "type": "",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Chrysantème",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
     "toxicBovin": 0,
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Chrysanthemum morifolium",
     "remarks": []
   },
   {
@@ -1671,14 +2216,26 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Clematis",
     "remarks": []
+  },
+  {
+    "name": "Coeur de Marie",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dicentra",
+    "remarks": ["Les feuillages, racines sont toxiques"]
   },
   {
     "name": "Colchique d'automne",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "scientificName": "Colchicum autumnale",
     "remarks": [
+      "Le bulbe est toxique",
       "apathie, troubles de la démarche, hypersalivation, vomissements sanglants, diarrhée."
     ],
     "toxicEquine": 1,
@@ -1762,6 +2319,17 @@
     "toxicSheep": 0,
     "toxicRabbit": 1,
     "scientificName": "",
+    "remarks": []
+  },
+  {
+    "name": "Pavot argémone",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Papaver argemone",
     "remarks": []
   },
   {
@@ -1886,6 +2454,72 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": -1
+  },
+  {
+    "name": "Cotonéaster",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les fruits sont légèrement toxiques","Sans danger pour le reste"],
+    "scientificName": "Cotoneaster",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Cornouiller",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les fruits sont légèrement toxiques","Sans danger pour le reste"],
+    "scientificName": "Cornus",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Césalpinie",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les graines, gousses sont toxiques"],
+    "scientificName": "Caesalpinia",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Césalpinie de Gilles",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les graines, gousses sont toxiques"],
+    "scientificName": "Caesalpinia gilliesii",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Cannabis sativa",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Cannabis sativa",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Cheilanthes",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Cheilanthes",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
   },
   {
     "name": "Crepis jacquinii",
@@ -2071,7 +2705,7 @@
     "toxicSheep": 1,
     "toxicRabbit": 1,
     "scientificName": "",
-    "remarks": []
+    "remarks": ["Toutes les espèces sont toxiques/mortelles"]
   },
   {
     "name": "Datura ferox",
@@ -2131,7 +2765,106 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Digitalis purpurea",
+    "remarks": ["Toutes ses parties peuvent être mortelles"]
+  },
+  {
+    "name": "Daucus carotte",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Daucus carota",
+    "remarks": []
+  },
+  {
+    "name": "Œillet commun (Dianthus)",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dianthus caryophyllus",
+    "remarks": []
+  },
+  {
+    "name": "Dionée attrape-mouche",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dionaea muscipula",
+    "remarks": []
+  },
+  {
+    "name": "Dracaena",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dracaena spp.",
+    "remarks": []
+  },
+  {
+    "name": "Dracaena à frange rouge",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dracaena marginata",
+    "remarks": []
+  },
+  {
+    "name": "Dragonnier des Canaries",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dracaena draco",
+    "remarks": []
+  },
+  {
+    "name": "Dragonnnier de Madagascar",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dracaena marginata",
+    "remarks": []
+  },
+  {
+    "name": "Dragonnier parfumé",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Dracaena fragrans massangeana",
+    "remarks": []
+  },
+  {
+    "name": "Drymaria pachyphylla",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Drymaria pachyphylla",
     "remarks": []
   },
   {
@@ -2244,6 +2977,66 @@
     "toxicRabbit": -1
   },
   {
+    "name": "Epilobe",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les fruits, écorces sont toxiques"],
+    "scientificName": "Epilobium",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Epipremnum aureum",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les fruits, écorces sont toxiques"],
+    "scientificName": "Epipremnum aureum",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Equisetum",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les fruits, écorces sont toxiques"],
+    "scientificName": "Equisetum sp.",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Étoile de Noël",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les feuilles et la sève sont fatales, les fleurs sont toxiques"],
+    "scientificName": "Euphorbia pulcherrima",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Amsinckia intermedia",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les fruits, écorces sont toxiques"],
+    "scientificName": "Amsinckia intermedia",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
     "name": "Epinard sauvage",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
@@ -2341,7 +3134,29 @@
     "toxicGoat": 1,
     "toxicSheep": 1,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Euphorbia sp.",
+    "remarks": ["Les feuilles, fleurs, sève sont toxiques"]
+  },
+  {
+    "name": "Euphorbe maculée",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 1,
+    "toxicSheep": 1,
+    "toxicRabbit": 1,
+    "scientificName": "Euphorbia maculata",
+    "remarks": []
+  },
+  {
+    "name": "Euphorbe panachée",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 1,
+    "toxicSheep": 1,
+    "toxicRabbit": 1,
+    "scientificName": "Euphorbia marginata",
     "remarks": []
   },
   {
@@ -2418,6 +3233,140 @@
     "toxicBovin": 1,
     "toxicGoat": 1,
     "toxicSheep": 1,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Couronne d’épines",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Euphorbia milii",
+    "remarks": ["lapin: les feuilles, fleurs sont toxiques",
+      "latex : irritation des muqueuses, stomatite, hypersalivation."
+    ],
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 1,
+    "toxicSheep": 1,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Coyotillo",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Karwinskia humboldtiana",
+    "remarks": ["les mûres sont toxiques"],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Crocus",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Crocus",
+    "remarks": ["les crocus (sorte de bulbe) sont toxiques"],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Daubentonia punicea",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Daubentonia punicea",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Crotaire",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Crotalaria spp.",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Crotalaire",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Crotalaria spp.",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Croton",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Codiaeum variegatum",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Croton Capiteux",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Croton capitatus",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Cycas du Japon",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Cycas revolutas",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Cyclamen",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Cyclamen sp.",
+    "remarks": [],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Cytise faux ébénier",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Laburnum",
+    "remarks": ["Les graines et les gousses peuvent être mortelles"],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Daphné bois-gentil",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Daphne mezereum",
+    "remarks": ["Les mûres sont mortelles"],
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
     "toxicRabbit": 1
   },
   {
@@ -2532,6 +3481,237 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": -1
+  },
+  {
+    "name": "Faux Philodendron",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Monstera deliciosa",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Feuilles de Toyon",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Heteromeles arbutifolia",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Figuier lyre",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Ficus lyrata",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Fleur de lune",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Spathiphyllum",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Fleur de pétard",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Dichelostemma ida-maia",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Fougère-aigle",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Pteridium aquilinum",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Fléole des prés",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Triglochin sp.",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Fusain du Japon",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Euonymus",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Galant de nuit",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Cestrum nocturnum",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Gelsemium",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Gelsemium sempervirens",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Genévrier",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Juniperus",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Gentiane",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Gelsemium sempervirens",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Géranium de Californie",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Roldana petasitis",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Gesse maritime",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Lathyrus japonicus",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Glaïeul",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Gladiolus sp.",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Gléchome",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Glechoma",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Glycine",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Wisteria",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Gousse de vésicule",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Sesbania vesicaria",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Gui",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Les mûres sont mortelles"],
+    "scientificName": "Viscum album",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Gutierrezia microcephala",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Gutierrezia microcephala",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Halogeton",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Halogeton glomeratus",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
   },
   {
     "name": "Feuille de chêne",
@@ -2668,7 +3848,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Ficus carica L.",
     "remarks": [
       "feuilles et branches toxiques, fruits à éviter",
       "sans danger si votre lapin en grignote au passage mais à ne pas cueillir"
@@ -2678,7 +3858,7 @@
     "name": "Fléole de Boehmer",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
-    "scientificName": "",
+    "scientificName": "Phleum phleoides",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -2690,7 +3870,7 @@
     "name": "Fléole des près",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
-    "scientificName": "",
+    "scientificName": "Phleum pratense",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -2702,7 +3882,7 @@
     "name": "Fléole noueuse",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
-    "scientificName": "",
+    "scientificName": "Phleum pratense",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -2714,7 +3894,7 @@
     "name": "Flouve odorante",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
-    "scientificName": "",
+    "scientificName": "Anthoxanthum odoratum",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -2771,7 +3951,7 @@
   {
     "name": "Fraise",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Fruits et feuilles","Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -2783,7 +3963,7 @@
   {
     "name": "Fraisier des bois",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Fruits et feuilles","Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
@@ -2795,7 +3975,7 @@
   {
     "name": "Framboise",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Fruits et feuilles","Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -3120,6 +4300,48 @@
     "remarks": []
   },
   {
+    "name": "Conium",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 1,
+    "toxicSheep": 1,
+    "toxicRabbit": 1,
+    "scientificName": "Conium",
+    "remarks": [
+      "Grande consoude",
+      "plante fraîche : hypersalivation, paralysie, ataxie, faiblesse musculaire, respiration difficile, spasmes."
+    ]
+  },
+  {
+    "name": "Ciguë aquatique",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 1,
+    "toxicSheep": 1,
+    "toxicRabbit": 1,
+    "scientificName": "Cicuta",
+    "remarks": [
+      "Grande consoude",
+      "plante fraîche : hypersalivation, paralysie, ataxie, faiblesse musculaire, respiration difficile, spasmes."
+    ]
+  },
+  {
+    "name": "Tsuga",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 1,
+    "toxicSheep": 1,
+    "toxicRabbit": 1,
+    "scientificName": "Tsuga",
+    "remarks": [
+      "Grande consoude",
+      "plante fraîche : hypersalivation, paralysie, ataxie, faiblesse musculaire, respiration difficile, spasmes."
+    ]
+  },
+  {
     "name": "Grande ciguë",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 1,
@@ -3127,7 +4349,7 @@
     "toxicGoat": 1,
     "toxicSheep": 1,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Conium maculatum",
     "remarks": [
       "Grande consoude",
       "plante fraîche : hypersalivation, paralysie, ataxie, faiblesse musculaire, respiration difficile, spasmes."
@@ -3172,7 +4394,7 @@
   {
     "name": "Groseillier",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Fruits et feuilles","Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
@@ -3216,6 +4438,39 @@
     "toxicRabbit": -1
   },
   {
+    "name": "Haricot",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Phaseolus vulgaris",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Haricot de Lima",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Phaseolus lunatus",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Hélénie de Hoopes",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["Helenium hoopesii"],
+    "scientificName": "Hymenoxys hoopesii",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
     "name": "Gypsophile",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
@@ -3229,7 +4484,7 @@
   {
     "name": "Haricots verts crus",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "scientificName": "",
+    "scientificName": "Phaseolus vulgaris",
     "remarks": [
       "En petite quantité car indigeste"
     ],
@@ -3542,7 +4797,7 @@
   {
     "name": "Kiwi",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -3954,7 +5209,7 @@
     "name": "Luzerne",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
-    "scientificName": "Medicado sadiva",
+    "scientificName": "Medicago sativa",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -4048,7 +5303,7 @@
   {
     "name": "Mangue",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -4340,6 +5595,19 @@
     "toxicRabbit": 1
   },
   {
+    "name": "Morelle",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 0,
+    "toxicSheep": 1,
+    "toxicRabbit": 1,
+    "scientificName": "Solanum",
+    "remarks": [
+      "anorexie, nausées, vomissements, douleurs abdominales, diarrhées, apathie, tremblements, prostration, perte de conscience."
+    ]
+  },
+  {
     "name": "Morelle noire",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 1,
@@ -4353,6 +5621,32 @@
     ]
   },
   {
+    "name": "Cerise de Jérusalem",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 0,
+    "toxicSheep": 1,
+    "toxicRabbit": 1,
+    "scientificName": "Solanum pseudocapsicum",
+    "remarks": [
+      "anorexie, nausées, vomissements, douleurs abdominales, diarrhées, apathie, tremblements, prostration, perte de conscience."
+    ]
+  },
+  {
+    "name": "Cerise de Jérusalem",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 0,
+    "toxicSheep": 1,
+    "toxicRabbit": 1,
+    "scientificName": "Solanum elaeagnifolium",
+    "remarks": [
+      "anorexie, nausées, vomissements, douleurs abdominales, diarrhées, apathie, tremblements, prostration, perte de conscience."
+    ]
+  },
+  {
     "name": "Mouron bleu",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 0,
@@ -4360,7 +5654,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Anagallis foemina",
     "remarks": []
   },
   {
@@ -4475,7 +5769,7 @@
   {
     "name": "Mûre",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Fruits et feuilles","Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -4533,7 +5827,7 @@
   {
     "name": "Myrtille",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -4570,7 +5864,7 @@
   {
     "name": "Nectarine",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -4669,7 +5963,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Dianthus caryophyllus",
     "remarks": []
   },
   {
@@ -4703,7 +5997,7 @@
     "toxicSheep": 0,
     "toxicRabbit": 1,
     "scientificName": "",
-    "remarks": []
+    "remarks": ["Feuilles toxiques","Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"]
   },
   {
     "name": "Orge des rats",
@@ -4847,7 +6141,7 @@
     "toxicGoat": 0,
     "toxicSheep": 1,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Rumex acetosa",
     "remarks": []
   },
   {
@@ -4856,7 +6150,7 @@
     "remarks": [
       "En petite quantité"
     ],
-    "scientificName": "",
+    "scientificName": "Oxalis corniculata",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -4870,7 +6164,7 @@
     "remarks": [
       "En petite quantité"
     ],
-    "scientificName": "",
+    "scientificName": "Oxalis corniculata",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -4886,7 +6180,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Oxalis stricta",
     "remarks": []
   },
   {
@@ -4897,7 +6191,7 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": 1,
-    "scientificName": "",
+    "scientificName": "Arecaceae",
     "remarks": [
       "toutes les plantes de cette famille"
     ]
@@ -4906,7 +6200,7 @@
     "name": "Panais",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
-    "scientificName": "",
+    "scientificName": "Pastinaca sativa",
     "type": "Légumes racines",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -4928,7 +6222,7 @@
   {
     "name": "Papaye",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -5035,7 +6329,7 @@
   {
     "name": "Pêche",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -5202,13 +6496,13 @@
   {
     "name": "Pied d'alouette",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "scientificName": "Delphinium consolida",
-    "remarks": [],
+    "scientificName": "Consolida regalis",
+    "remarks": ["Aussi appelée Delphinium consolida", "Toutes les espèces sont toxiques/mortelles"],
     "toxicEquine": 1,
     "toxicBovin": 1,
     "toxicGoat": 1,
     "toxicSheep": 1,
-    "toxicRabbit": 0
+    "toxicRabbit": 1
   },
   {
     "name": "Piloselle",
@@ -5342,7 +6636,7 @@
   {
     "name": "Poire",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -5392,7 +6686,7 @@
   {
     "name": "Pomme",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -5543,7 +6837,7 @@
   {
     "name": "Prune",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -5613,7 +6907,7 @@
   {
     "name": "Raisin",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
+    "remarks": ["Les graines, pépins ou noyaux doivent être retirés","Enlever la chair qui se trouve au contact direct des noyaux/pépins/graines"],
     "scientificName": "",
     "type": "Fruits",
     "toxicEquine": 0,
@@ -5771,6 +7065,19 @@
     "toxicRabbit": 1
   },
   {
+    "name": "Bouton d’or",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "scientificName": "Ranunculus sp.",
+    "remarks": [
+      "diarrhées et convulsions pouvant entraîner la mort."
+    ],
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 1,
+    "toxicSheep": 1,
+    "toxicRabbit": 1
+  },
+  {
     "name": "Renouée des oiseaux",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "scientificName": "Polygonum aviculare",
@@ -5835,8 +7142,8 @@
   {
     "name": "Romaine",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
-    "scientificName": "",
+    "remarks": ["Lactuca sativa var. longifolia"],
+    "scientificName": "Lactuca sativa",
     "type": "Salades",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -5862,7 +7169,7 @@
     "remarks": [
       "jeunes pousse. Particulièrement conseillée en cas de diarhéee"
     ],
-    "scientificName": "",
+    "scientificName": "Rubus plicatus",
     "type": "Herbes sauvages",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -5922,7 +7229,7 @@
     "name": "Rougette",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "remarks": [],
-    "scientificName": "",
+    "scientificName": "Lactuca sativa",
     "type": "Salades",
     "toxicEquine": 0,
     "toxicBovin": 0,
@@ -6153,14 +7460,14 @@
   {
     "name": "Séneçon commun",
     "url": "./assets/images/illustrations/image_placeholder.png",
-    "remarks": [],
-    "scientificName": "",
+    "remarks": ["Les lapin y résistent mais il ne faut pas les rajouter au menu"],
+    "scientificName": "Jacobaea vulgaris",
     "type": "Herbes sauvages",
-    "toxicEquine": 0,
-    "toxicBovin": 0,
+    "toxicEquine": 1,
+    "toxicBovin": 1,
     "toxicGoat": 0,
     "toxicSheep": 0,
-    "toxicRabbit": -1
+    "toxicRabbit": 1
   },
   {
     "name": "Séneçon de Jacob",
@@ -6172,6 +7479,7 @@
     "toxicRabbit": 1,
     "scientificName": "Jacobaea vulgaris",
     "remarks": [
+      "Les lapin y résistent mais il ne faut pas les rajouter au menu",
       "plante fraîche : dépression, faiblesse, anorexie, ictère, douleurs, abdominales, paralysie."
     ]
   },
@@ -6187,6 +7495,17 @@
     "remarks": []
   },
   {
+    "name": "Cinéraire ensanglantée",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "toxicEquine": 1,
+    "toxicBovin": 1,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1,
+    "scientificName": "Senecio hybridus",
+    "remarks": []
+  },
+  {
     "name": "Séneçon Jacobée",
     "url": "./assets/images/illustrations/image_placeholder.png",
     "toxicEquine": 1,
@@ -6196,6 +7515,7 @@
     "toxicRabbit": 1,
     "scientificName": "Jacobaea vulgaris",
     "remarks": [
+      "Les lapin y résistent mais il ne faut pas les rajouter au menu",
       "plante fraîche : dépression, faiblesse, anorexie, ictère, douleurs, abdominales, paralysie."
     ]
   },
@@ -6246,6 +7566,78 @@
     "toxicGoat": 0,
     "toxicSheep": 0,
     "toxicRabbit": -1
+  },
+  {
+    "name": "Calendula officinalis",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Calendula officinalis",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Calia secundiflora",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Sophora secundiflora",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Calice de la mort",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Amanita phalloides",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Canne des muets",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["toutes les parties sont toxiques, en particulier le suc"],
+    "scientificName": "Dieffenbachia",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Dieffenbachia amoena",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": ["toutes les parties sont toxiques, en particulier le suc"],
+    "scientificName": "Dieffenbachia amoena",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
+  },
+  {
+    "name": "Centaurée du solstice",
+    "url": "./assets/images/illustrations/image_placeholder.png",
+    "remarks": [],
+    "scientificName": "Centaurea solstitialis",
+    "type": "Herbes sauvages",
+    "toxicEquine": 0,
+    "toxicBovin": 0,
+    "toxicGoat": 0,
+    "toxicSheep": 0,
+    "toxicRabbit": 1
   },
   {
     "name": "Stellaire graminée",
