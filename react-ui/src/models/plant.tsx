@@ -7,9 +7,13 @@ export default class Plant {
     public scientificName: string;
     public type: string;
     public toxicities : PlantToxicities;
-
+    public images: any;
+    public gbif: any;
+    public commonNames: any;
+    public plantNetScientificName: any;
+    
     constructor(plantDto: any) {
-        const {name, url, remarks, scientificName, type, toxicEquine, toxicBovin, toxicGoat, toxicSheep, toxicRabbit} = plantDto;
+        const {name, url, remarks, scientificName, type, toxicEquine, toxicBovin, toxicGoat, toxicSheep, toxicRabbit, images, gbif, commonNames, plantNetScientificName} = plantDto;
 
         this.name = name?name:"";
         this.url = url?url:"./assets/images/illusrations/image_placeholder.png";
@@ -23,7 +27,11 @@ export default class Plant {
             goat: toxicGoat?toxicGoat:0,
             sheep: toxicSheep?toxicSheep:0
         }
-        this.toxicities = new PlantToxicities(_toxicities)
+        this.toxicities = new PlantToxicities(_toxicities);
+        this.images = images? images: {};
+        this.gbif = gbif? gbif: {};
+        this.commonNames = commonNames? commonNames: [];
+        this.plantNetScientificName = plantNetScientificName? plantNetScientificName: '';
 
         return this
     }
