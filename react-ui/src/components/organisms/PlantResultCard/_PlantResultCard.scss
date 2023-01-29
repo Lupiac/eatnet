@@ -127,4 +127,48 @@
             text-transform: uppercase;
         }
     }
+    ion-img{
+        position: relative;
+        &::before{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background-color: $surface-a;
+            border-radius: 50%;
+            content: '';
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &.ico-leaf{
+            &::before{
+                background-image: url("../../../assets/icons/plantnet-leaf.png");
+            }
+        }
+        &.ico-flower{
+            &::before{
+                background-image: url("../../../assets/icons/plantnet-flower.png");
+            }
+        }
+        &.ico-fruit{
+            &::before{
+                background-image: url("../../../assets/icons/plantnet-fruit.png");
+            }
+        }
+        &.ico-bark{
+            &::before{
+                background-image: url("../../../assets/icons/plantnet-bark.png");
+            }
+        }
+        &.ico-habit{
+            &::before{
+                background-image: url("../../../assets/icons/plantnet-habit.png");
+            }
+        }
+        &.ico-other{
+            &::before{
+                background-image: url("../../../assets/icons/plantnet-other.png");
+            }
+        }
+    }
 }
